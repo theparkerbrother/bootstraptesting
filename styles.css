@@ -1,0 +1,32 @@
+/* Base styles (light mode) */
+:root {
+    --background-color: #ffffff; /* Light background */
+    --text-color: #000000;        /* Dark text */
+    --navbar-bg: #f8f9fa;         /* Bootstrap's default light navbar */
+    --footer-bg: #f8f9fa;         /* Light footer */
+}
+
+/* Apply the variables */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.navbar {
+    background-color: var(--navbar-bg) !important;
+}
+
+footer {
+    background-color: var(--footer-bg);
+    color: var(--text-color);
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #121212; /* Dark background */
+        --text-color: #e0e0e0;       /* Light text */
+        --navbar-bg: #343a40;        /* Dark navbar */
+        --footer-bg: #343a40;        /* Dark footer */
+    }
+}
